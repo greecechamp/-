@@ -95,7 +95,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
             <input 
               type="text" 
               placeholder="ค้นหาชื่อ หรือ รหัสสมาชิก..." 
-              className="w-full pl-14 pr-6 py-4 bg-white border border-slate-200 rounded-3xl focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm font-bold shadow-sm"
+              className="w-full pl-14 pr-6 py-4 bg-white border border-slate-200 rounded-3xl focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm font-bold text-slate-950 shadow-sm"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -172,7 +172,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
                        required
                        type="text"
                        placeholder="นายสมชาย มีสุข"
-                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
                        value={formData.name}
                        onChange={(e) => setFormData({...formData, name: e.target.value})}
                      />
@@ -183,7 +183,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
                        required
                        type="text"
                        placeholder="M006"
-                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
                        value={formData.memberId}
                        onChange={(e) => setFormData({...formData, memberId: e.target.value})}
                      />
@@ -193,7 +193,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
                      <input 
                        required
                        type="date"
-                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
                        value={formData.joinDate}
                        onChange={(e) => setFormData({...formData, joinDate: e.target.value})}
                      />
@@ -203,7 +203,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
                      <input 
                        required
                        type="number"
-                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-black text-indigo-600 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-black text-slate-950 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
                        value={formData.initialDeposit}
                        onChange={(e) => setFormData({...formData, initialDeposit: e.target.value})}
                      />
@@ -213,7 +213,7 @@ const MemberManagement: React.FC<MemberManagementProps> = ({ members, onAddMembe
                      <input 
                        required
                        type="number"
-                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-black text-slate-600 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                       className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-black text-slate-950 focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
                        value={formData.regFee}
                        onChange={(e) => setFormData({...formData, regFee: e.target.value})}
                      />

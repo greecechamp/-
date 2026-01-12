@@ -139,7 +139,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                       <input 
                         required
                         type="text"
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold placeholder:text-slate-300"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950 placeholder:text-slate-300"
                         placeholder="ระบุชื่อจริง-นามสกุล"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -154,7 +154,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                       <input 
                         required
                         type="tel"
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold placeholder:text-slate-300"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950 placeholder:text-slate-300"
                         placeholder="08X-XXX-XXXX"
                         value={formData.phoneNumber}
                         onChange={(e) => setFormData({...formData, phoneNumber: e.target.value})}
@@ -170,7 +170,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                         required
                         type="text"
                         maxLength={13}
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold placeholder:text-slate-300"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950 placeholder:text-slate-300"
                         placeholder="X-XXXX-XXXXX-XX-X"
                         value={formData.idNumber}
                         onChange={(e) => setFormData({...formData, idNumber: e.target.value})}
@@ -184,7 +184,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                       <MapPin className="absolute left-4 top-4 text-slate-400" size={16} />
                       <textarea 
                         required
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold h-28 resize-none placeholder:text-slate-300"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950 h-28 resize-none placeholder:text-slate-300"
                         placeholder="บ้านเลขที่ หมู่ที่ ตำบล..."
                         value={formData.address}
                         onChange={(e) => setFormData({...formData, address: e.target.value})}
@@ -205,7 +205,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                       <input 
                         required
                         type="date"
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950"
                         value={formData.birthDate}
                         onChange={(e) => setFormData({...formData, birthDate: e.target.value})}
                       />
@@ -219,7 +219,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                       <input 
                         required
                         type="text"
-                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold placeholder:text-slate-300"
+                        className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950 placeholder:text-slate-300"
                         placeholder="ชื่อผู้รับสิทธิ์กรณีเสียชีวิต"
                         value={formData.beneficiaryName}
                         onChange={(e) => setFormData({...formData, beneficiaryName: e.target.value})}
@@ -243,7 +243,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                           <input 
                             required
                             type="password"
-                            className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold"
+                            className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950"
                             placeholder="••••••••"
                             value={formData.password}
                             onChange={(e) => setFormData({...formData, password: e.target.value})}
@@ -258,7 +258,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                           <input 
                             required
                             type="password"
-                            className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold"
+                            className="w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm font-bold text-slate-950"
                             placeholder="••••••••"
                             value={formData.confirmPassword}
                             onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}

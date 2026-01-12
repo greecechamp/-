@@ -360,7 +360,7 @@ const WelfareManagement: React.FC<WelfareManagementProps> = ({ state, onAddTrans
                   required
                   value={formData.memberId}
                   onChange={(e) => setFormData({...formData, memberId: e.target.value})}
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 appearance-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:outline-none focus:ring-2 focus:ring-pink-500 appearance-none"
                 >
                   <option value="">-- เลือกสมาชิก --</option>
                   {state.members.map(m => (
@@ -398,7 +398,7 @@ const WelfareManagement: React.FC<WelfareManagementProps> = ({ state, onAddTrans
                     type="number"
                     value={formData.amount}
                     onChange={(e) => setFormData({...formData, amount: e.target.value})}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-black text-slate-950 focus:outline-none focus:ring-2 focus:ring-pink-500"
                   />
                 </div>
                 <div>
@@ -407,7 +407,7 @@ const WelfareManagement: React.FC<WelfareManagementProps> = ({ state, onAddTrans
                     type="date"
                     value={formData.date}
                     onChange={(e) => setFormData({...formData, date: e.target.value})}
-                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:outline-none focus:ring-2 focus:ring-pink-500"
                   />
                 </div>
               </div>
@@ -426,7 +426,7 @@ const WelfareManagement: React.FC<WelfareManagementProps> = ({ state, onAddTrans
                   placeholder="เช่น เยี่ยมไข้ที่ รพ.ประจำจังหวัด..."
                   value={formData.note}
                   onChange={(e) => setFormData({...formData, note: e.target.value})}
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 />
               </div>
 

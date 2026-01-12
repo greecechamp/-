@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { CircleDollarSign, Plus, Search, TrendingDown, Clock, Calculator, Receipt, Scale, ShieldCheck, AlertCircle } from 'lucide-react';
 import { WelfareFundState, CurrentUser, Transaction, Member, TransactionType } from '../types';
@@ -107,7 +106,7 @@ const LoanManagement: React.FC<LoanManagementProps> = ({ state, onAddTransaction
               {currentUser.role === 'ADMIN' ? (
                 <div>
                   <label className="block text-[10px] font-bold text-slate-400 uppercase mb-2">เลือกสมาชิก</label>
-                  <select value={loanForm.memberId} onChange={(e) => setLoanForm({...loanForm, memberId: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold">
+                  <select value={loanForm.memberId} onChange={(e) => setLoanForm({...loanForm, memberId: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-sm font-bold text-slate-950">
                     <option value="">-- เลือกผู้กู้ --</option>
                     {state.members.map(m => <option key={m.id} value={m.memberId}>{m.name}</option>)}
                   </select>
@@ -116,8 +115,9 @@ const LoanManagement: React.FC<LoanManagementProps> = ({ state, onAddTransaction
                 <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100"><p className="text-[10px] text-slate-400 font-bold uppercase mb-1">กู้ในนาม</p><p className="font-black text-slate-800">{currentUser.name}</p></div>
               )}
               <div className="grid grid-cols-2 gap-4">
-                <div><label className="block text-[10px] font-bold text-slate-400 uppercase mb-2">ยอดเงินกู้</label><input type="number" value={loanForm.amount} onChange={(e) => setLoanForm({...loanForm, amount: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-black text-amber-600" /></div>
-                <div><label className="block text-[10px] font-bold text-slate-400 uppercase mb-2">กี่เดือน</label><input type="number" value={loanForm.loanTerm} onChange={(e) => setLoanForm({...loanForm, loanTerm: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-black" /></div>
+                <div><label className="block text-[10px] font-bold text-slate-400 uppercase mb-2">ยอดเงินกู้</label><input type="number" value={loanForm.amount} onChange={(e) => setLoanForm({...loanForm, amount: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-black text-slate-950" /></div>
+                {/* Fix: Replaced 'loanTerm' with 'loanForm' in the spread operator to correctly update state */}
+                <div><label className="block text-[10px] font-bold text-slate-400 uppercase mb-2">กี่เดือน</label><input type="number" value={loanForm.loanTerm} onChange={(e) => setLoanForm({...loanForm, loanTerm: e.target.value})} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl font-black text-slate-950" /></div>
               </div>
             </div>
             <div className="bg-slate-900 rounded-[40px] p-8 text-white flex flex-col justify-between">

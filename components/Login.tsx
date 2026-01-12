@@ -85,7 +85,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, onNavigateToRegister, members })
                   <input 
                     required
                     type="text"
-                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-sm font-bold"
+                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-sm font-bold text-slate-950"
                     placeholder={role === 'ADMIN' ? 'M0000' : 'ระบุรหัสสมาชิก'}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -100,7 +100,7 @@ const Login: React.FC<LoginProps> = ({ onLogin, onNavigateToRegister, members })
                   <input 
                     required
                     type="password"
-                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-sm font-bold"
+                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all text-sm font-bold text-slate-950"
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}

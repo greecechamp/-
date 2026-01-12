@@ -45,7 +45,7 @@ const TransactionManagement: React.FC<TransactionManagementProps> = ({ state, on
             <input 
               type="text" 
               placeholder="ค้นหารายการ..." 
-              className="w-full pl-12 pr-4 py-3 bg-white border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-bold"
+              className="w-full pl-12 pr-4 py-3 bg-white border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm font-bold text-slate-950"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
