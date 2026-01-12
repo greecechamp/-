@@ -211,7 +211,7 @@ const App: React.FC = () => {
               <span className="text-[10px] font-bold leading-tight text-center">กองทุน<br/>หมู่บ้าน</span>
             </div>
             <div className="min-w-0">
-              <h1 className="font-bold text-slate-800 tracking-tight text-sm truncate">กองทุนบ้านเขาเสวยราชย์</h1>
+              <h1 className="font-bold text-slate-800 tracking-tight text-sm truncate">กองทุนบ้านเขาเสวยราช</h1>
               <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Village Welfare Fund</p>
             </div>
           </div>

@@ -120,7 +120,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
               <UserPlus className="text-emerald-600" size={32} />
             </div>
             <h1 className="text-3xl font-black text-slate-800 tracking-tight">ลงทะเบียนสมาชิกใหม่</h1>
-            <p className="text-slate-500 text-sm mt-2 font-medium">เข้าร่วมกองทุนสวัสดิการหมู่บ้านบ้านเขาเสวยราชย์</p>
+            <p className="text-slate-500 text-sm mt-2 font-medium">เข้าร่วมกองทุนสวัสดิการหมู่บ้านบ้านเขาเสวยราช</p>
             <div className="mt-4 px-5 py-2.5 bg-indigo-50 text-indigo-700 rounded-2xl inline-block text-xs font-black shadow-sm">
               รหัสสมาชิกที่จะได้รับ: {nextMemberId}
             </div>
@@ -336,7 +336,7 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
 
                <div className="mt-8 pt-8 border-t border-white/5">
                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-relaxed italic text-center">
-                   * ข้อมูลข้างต้นมีผลทางกฎหมายเบื้องต้นตามข้อบังคับกองทุนหมู่บ้านบ้านเขาเสวยราชย์
+                   * ข้อมูลข้างต้นมีผลทางกฎหมายเบื้องต้นตามข้อบังคับกองทุนหมู่บ้านบ้านเขาเสวยราช
                  </p>
                </div>
             </div>
@@ -356,14 +356,14 @@ const Registration: React.FC<RegistrationProps> = ({ onRegister, onCancel, nextM
                 : 'bg-slate-100 text-slate-300 shadow-none cursor-not-allowed border border-slate-200'
               }`}
             >
-              ยืนยันการลงทะเบียนสมาชิกใหม่
+              ยืนยันการสมัครสมาชิกใหม่
               <CheckCircle2 size={20} />
             </button>
           </form>
 
           <div className="mt-10 pt-8 border-t border-slate-50 text-center">
             <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-loose">
-              Copyright © 2568 กองทุนสวัสดิการหมู่บ้านบ้านเขาเสวยราชย์<br/>All Rights Reserved.
+              Copyright © 2568 กองทุนสวัสดิการหมู่บ้านบ้านเขาเสวยราช<br/>All Rights Reserved.
             </p>
           </div>
         </div>

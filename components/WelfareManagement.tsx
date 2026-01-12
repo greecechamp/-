@@ -197,7 +197,7 @@ const WelfareManagement: React.FC<WelfareManagementProps> = ({ state, onAddTrans
                 <h4 className="text-xs font-bold uppercase tracking-widest text-blue-200">ระเบียบกองทุนปี 2568</h4>
               </div>
               <p className="text-sm leading-relaxed text-slate-300 italic mb-6">
-                "ตัวเลขสวัสดิการเหล่านี้คำนวณจากฐานรายได้และกำไรสะสม เพื่อความมั่นคงสูงสุดของสมาชิกบ้านเขาเสวยราชย์"
+                "ตัวเลขสวัสดิการเหล่านี้คำนวณจากฐานรายได้และกำไรสะสม เพื่อความมั่นคงสูงสุดของสมาชิกบ้านเขาเสวยราช"
               </p>
               <div className="space-y-3">
                 <div className="flex justify-between items-center text-xs">

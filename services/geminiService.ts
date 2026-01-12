@@ -13,7 +13,7 @@ export const getAIInsight = async (fundState: WelfareFundState): Promise<string>
   const ai = getAI();
   
   const prompt = `
-    ในฐานะที่ปรึกษาการเงินกองทุนสวัสดิการบ้านเขาเสวยราชย์ โปรดวิเคราะห์สถานะกองทุนปัจจุบันดังนี้:
+    ในฐานะที่ปรึกษาการเงินกองทุนสวัสดิการบ้านเขาเสวยราช โปรดวิเคราะห์สถานะกองทุนปัจจุบันดังนี้:
     - ยอดเงินกองทุนทั้งหมด: ${fundState.totalBalance} บาท
     - จำนวนสมาชิก: ${fundState.totalMembers} คน
     - ยอดเงินกู้คงค้าง: ${fundState.activeLoans} บาท
